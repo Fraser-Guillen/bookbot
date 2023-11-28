@@ -1,2 +1,2 @@
 # bookbot
-My first programming project 
+BookBot is my first git project!
