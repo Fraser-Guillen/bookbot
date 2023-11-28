@@ -5,6 +5,7 @@ def main():
     letters_dict = get_chars_dict(text)
     chars_list = chars_dict_to_list(letters_dict)
 
+    #formatting print to match instructions
     print(f"--- Begin report of {book_path} ---")
     print(f"{num_words} words found in the document")
     print()
@@ -17,15 +18,16 @@ def main():
     print("--- End report ---")
 
 
+# getting the number of words in text
 def get_num_words(text):
     words = text.split()
     return len(words)
 
-
+# key for sorting dictionary - had to look this up 
 def sort_on(d):
     return d["num"]
 
-
+# converting into sorted list
 def chars_dict_to_list(num_chars_dict):
     sorted_list = []
     for ch in num_chars_dict:
