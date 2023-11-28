@@ -7,6 +7,7 @@ def main():
 
     #formatting print to match instructions
     print(f"--- Begin report of {book_path} ---")
+    print()
     print(f"{num_words} words found in the document")
     print()
 
@@ -15,6 +16,7 @@ def main():
             continue
         print(f"The '{item['char']}' character was found {item['num']} times")
 
+    print()
     print("--- End report ---")
 
 
